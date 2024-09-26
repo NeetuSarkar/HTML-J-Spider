@@ -1,0 +1,58 @@
+body{
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+.java{
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  height: 200px;
+  width: 250px;
+  border: 1px solid black;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+}
+
+.html{
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: absolute;
+  top:50px;
+  left:75px;
+}
+
+.css{
+  height: 50px;
+  width: 50px;
+  background-color: rgb(86, 188, 192);
+  border: 1px solid black;
+  border-radius: 10px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.java_text{
+  position: absolute;
+  left: 50px;
+ 
+}
+
+.html_text{
+  font-size: 12px;
+  position: absolute;
+  left: 10px;
+  top: -5px;
+}
+
+.css_text{
+  font-size: 15px;
+  position: absolute;
+  left: 10px;
+}
