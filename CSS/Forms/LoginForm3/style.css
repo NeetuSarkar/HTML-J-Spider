@@ -1,0 +1,69 @@
+.container{
+  border: 2px solid black;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  margin: 80px auto;
+  background-image: url(https://i0.wp.com/picjumbo.com/wp-content/uploads/detailed-shot-of-ripples-at-sunset-free-image.jpeg?w=600&quality=80);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px rgb(230, 144, 113);
+  border-radius: 20px;
+}
+
+.user{
+  height: 100px;
+  width: 100px;
+  border: 5px solid black;
+  border-radius: 50%;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
+::placeholder{
+  color: white;
+}
+
+i{
+  font-size: 40px;
+  margin: 25px 30px;
+}
+
+.child{
+  margin-top: 20px;
+}
+
+input{
+  text-align: center;
+}
+
+input{
+  background: transparent;
+  border:none;
+  border-bottom: 2px  solid white;
+  color: white;
+}
+
+
+
+body{
+  background-image: url(https://img.freepik.com/free-photo/tranquil-dusk-breaking-waves-meet-sunset-beauty-generated-by-ai_188544-26841.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+button{
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: orange;
+  cursor: pointer;
+  }
+
+  button:hover{
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0px 10px  10px rgb(154, 95, 73);
+  }
