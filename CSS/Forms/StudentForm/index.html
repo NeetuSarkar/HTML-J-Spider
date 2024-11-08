@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Student Information</legend>
+        <table width="100%">
+          <tr>
+            <td><label for="studentName">Student Name</label></td>
+            <td>
+              <input
+                type="text"
+                id="studentName"
+                name="studentName"
+                placeholder="Enter StudentName"
+                required
+              />
+            </td>
+
+            <td><label for="fatherName">Father Name</label></td>
+            <td>
+              <input
+                type="text"
+                id="fatherName"
+                name="fatherName"
+                placeholder="Enter Fathername"
+                required
+              />
+            </td>
+
+            <td><label for="motherName">Mother Name</label></td>
+            <td>
+              <input
+                type="text"
+                id="motherName"
+                name="motherName"
+                placeholder="Enter MotherName"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="age">Age</label></td>
+            <td>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                placeholder="Enter Age"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="dob">Date of Birth</label></td>
+            <td><input type="date" id="dob" name="dob" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter the email"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Gender</label></td>
+            <td>
+              <input type="radio" name="gender" value="Male" required /> Male
+              <input type="radio" name="gender" value="Female" /> Female
+              <input type="radio" name="gender" value="Others" /> Others
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Languages</label></td>
+            <td>
+              <input type="checkbox" name="languages" value="Telugu" /> Telugu
+              <br />
+              <input type="checkbox" name="languages" value="Kannada" /> Kannada
+              <br />
+              <input type="checkbox" name="languages" value="English" /> English
+              <br />
+              <input type="checkbox" name="languages" value="Hindi" /> Hindi
+              <br />
+              <input type="checkbox" name="languages" value="Odia" /> Odia
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="state">State</label></td>
+            <td>
+              <select name="state" id="state" required>
+                <option value="">Select...</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="address">Address</label></td>
+            <td>
+              <textarea
+                name="address"
+                id="address"
+                cols="20"
+                rows="5"
+                placeholder="Enter Address..."
+                required
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="aadhar" class="">Aadhar Card</label></td>
+            <td><input type="file" name="aadhar" id="aadhar" required /></td>
+          </tr>
+
+          <tr>
+            <td colspan="6" align="center">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

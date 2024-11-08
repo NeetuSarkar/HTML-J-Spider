@@ -1,0 +1,71 @@
+body {
+  padding: 20px;
+  color: #1a1a1a;
+  background-image: linear-gradient(
+    60deg,
+    rgb(179, 222, 217),
+    rgb(226, 179, 187),
+    rgb(217, 186, 217)
+  );
+  /* background-color: rgb(195, 231, 227); */
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+}
+
+legend {
+  color: rgb(223, 233, 232);
+  background-image: linear-gradient(45deg, rgb(93, 0, 255), purple);
+  border: 2px solid black;
+  border-radius: 0px 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 10px;
+}
+
+fieldset {
+  border: 3px solid #1a1a1a;
+  border-radius: 0px 10px;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 10px;
+}
+
+td,
+th {
+  padding: 5px;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+td[align="center"] {
+  text-align: center;
+}
+
+button {
+  color: rgb(223, 233, 232);
+  background-image: linear-gradient(45deg, blue, purple);
+  border: 2px solid black;
+  border-radius: 0px 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 10px;
+  margin-right: 10px;
+  padding: 10px 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-5px) scale(1.05);
+}
+
+input {
+  cursor: pointer;
+}

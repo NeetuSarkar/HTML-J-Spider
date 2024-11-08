@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom File Upload</title>
+    <style>
+      /* Hide the default file input */
+      input[type="file"] {
+        display: none;
+      }
+
+      /* Style the label as a custom button */
+      .custom-file-upload {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: background-color 0.3s, border-color 0.3s;
+      }
+
+      /* Add hover effects to the custom button */
+      .custom-file-upload:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+      }
+
+      /* Styling for when a file is selected */
+      .file-name {
+        margin-left: 10px;
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <!-- Label styled as a button -->
+      <label for="file-upload" class="custom-file-upload"> Choose File </label>
+
+      <!-- Hidden file input -->
+      <input id="file-upload" type="file" />
+
+      <!-- Placeholder for displaying the selected file name -->
+      <span class="file-name" id="file-name">No file chosen</span>
+    </form>
+  </body>
+</html>
