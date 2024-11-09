@@ -19,6 +19,8 @@ let studnetName = student["fName"];
 let stuId = student["stuId"];
 console.log(`Student id is ${stuId} and Student Name is ${studnetName}`);
 
-let obj1 = new student();
-obj1.fName = "Jeetu";
-console.log(obj1.fName);
+let str = 24;
+
+console.log(student.str);
+
+console.log(a);
