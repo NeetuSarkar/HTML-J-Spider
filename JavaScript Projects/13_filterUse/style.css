@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+nav div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+nav div img {
+  width: 40px;
+  height: 40px;
+}
+
+nav div form input {
+  padding: 4px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+nav div form button {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+nav form {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#container-button {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+#container-button button {
+  padding: 10px;
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+#item-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+#item-list li {
+  background-color: rgb(218, 218, 218);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 0.5rem;
+}
+
+#logout-btn {
+  padding: 5px 10px;
+  background-color: rgb(247, 38, 38);
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+#welcome-text {
+  color: rgb(41, 40, 40);
+  font-size: 20px;
+}
+
+.green {
+  color: rgb(27, 197, 27);
+}
+
+.red {
+  color: rgb(250, 20, 20);
+}
+
+@media (max-width: 568px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav form {
+    flex-direction: column;
+  }
+}

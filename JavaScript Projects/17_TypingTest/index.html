@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="navbar">
+        <div class="nav-left">
+          <p id="nav-header">TypingTest</p>
+        </div>
+        <div class="nav-right">
+          <input type="text" placeholder="Enter Username" />
+          <input type="password" id="" placeholder="Enter Password" />
+          <button id="login-btn">Login</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Container  -->
+    <div class="container" id="home-container">
+      <!-- Containere levels display -->
+      <div class="levels" id="levels">
+        <!-- <div class="level-card">
+          <p id="level-heading">Art of Communication</p>
+          <p id="level-number">Level <span id="lev-num">1</span></p>
+          <div class="level-start">
+            <p id="high-score">Score: <span id="hig-scr">45</span>WPM</p>
+            <button id="start-btn">Start</button>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- profile Stats Display -->
+      <div class="stats">
+        <div>
+          <p class="stats-heading">Typing</p>
+        </div>
+        <hr />
+        <div class="stats-speed">
+          <p class="stats-speed-heading">Speed</p>
+          <div class="stats-speed-details">
+            <p>Current Speed <span id="current-speed">50WPM</span></p>
+            <p>Last Week <span id="lastweek-speed">50WPM</span></p>
+            <p>Last Month <span id="lastmonth-speed">50WPM</span></p>
+          </div>
+        </div>
+        <hr />
+        <div class="time-spend">
+          <p class="time-spend-heading">Time Spend</p>
+          <div class="time-spend-details">
+            <p>Today <span id="today-time">2 Minutes</span></p>
+            <p>This week <span id="week-time">2 Minutes</span></p>
+            <p>This Month <span id="month-time">2 Minutes</span></p>
+          </div>
+        </div>
+        <hr />
+        <div class="accuracy-cont">
+          <div class="accuracy-container">
+            <p class="accuracy-heading">Accuracy</p>
+            <p><span id="accuracy">94</span>%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Typing page  -->
+    <div class="typing-page hidden" id="typing-page">
+      <div class="typing-stats">
+        <button id="back-to-home">
+          <i class="fa-solid fa-left-long"></i> Back
+        </button>
+        <p>Speed: <span id="real-time-speed">0WPM</span></p>
+        <p>Timer: <span id="real-time">00:00</span></p>
+        <p>Accuracy: <span id="real-time-accuracy">00%</span></p>
+        <button id="restart-level">
+          <i class="fa-solid fa-arrow-rotate-right"></i>
+        </button>
+      </div>
+      <div class="typing-paragraph">
+        <h1 class="level-heading" id="level-title">Art of Communication</h1>
+        <p class="level-text" id="level-text">
+          The art of communication is the foundation of leadership and teamwork.
+          It requires not only the ability to express ideas clearly but also the
+          willingness to listen with an open mind. By understanding others'
+          perspectives, we can build trust, resolve conflicts, and create an
+          environment where creativity and collaboration thrive, driving us
+          toward shared goals and success.
+        </p>
+      </div>
+      <div class="typing-input">
+        <textarea name="" id="input-text"> </textarea>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

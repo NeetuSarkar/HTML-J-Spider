@@ -1,0 +1,189 @@
+/* General styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e2f; /* Dark background */
+  color: #ffffff; /* Light text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Container styling */
+.container {
+  width: 90%;
+  max-width: 500px;
+  background-color: #282a36;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Heading */
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff79c6; /* Light pink heading */
+}
+
+/* Input container */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+/* Input styling */
+#todo-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #44475a;
+  background-color: #383a59;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+#todo-input::placeholder {
+  color: #6272a4;
+}
+
+/* Add Task Button */
+#add-task-btn {
+  background-color: #50fa7b; /* Light green */
+  color: #282a36;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+#add-task-btn:hover {
+  background-color: #40d87c;
+}
+
+/* To-Do List styling */
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* To-Do List Items */
+#todo-list li {
+  background-color: #44475a;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#todo-list li div {
+  display: flex;
+  gap: 10px;
+}
+
+#todo-list li:hover {
+  background-color: #5a5f78;
+}
+
+li input {
+  background-color: inherit;
+  border: none;
+  color: #ffffff;
+  outline: none;
+}
+
+/* Completed task styling */
+#todo-list li.completed span {
+  text-decoration: line-through;
+  color: #6272a4;
+}
+
+/* Delete Button */
+#todo-list li button {
+  background-color: #ff5555; /* Red */
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#todo-list li button:hover {
+  background-color: #ff3333;
+}
+
+#todo-list li #edit-btn {
+  background-color: rgb(100, 100, 255);
+}
+
+#todo-list li #edit-btn:hover {
+  background-color: rgb(24, 24, 255);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .input-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #todo-input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  #add-task-btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  #todo-list li {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  #todo-list li button {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+  }
+
+  #add-task-btn {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  #todo-list li {
+    padding: 8px;
+  }
+}

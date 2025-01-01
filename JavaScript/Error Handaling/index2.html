@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async Await</title>
+  </head>
+  <body>
+    <script>
+      console.log("Start");
+      let a = async () => {
+        console.log("fn start");
+
+        await setTimeout(() => {
+          console.log("timer");
+        });
+        console.log("fn ends");
+      };
+
+      a();
+
+      console.log("end");
+    </script>
+  </body>
+</html>

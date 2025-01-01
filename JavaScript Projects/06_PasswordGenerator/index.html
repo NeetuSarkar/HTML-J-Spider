@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Password Generator</h1>
+        <div class="password-div">
+          <input type="text" readonly id="password-display" />
+          <button id="refresh-btn">
+            <i class="fa-solid fa-arrows-rotate"></i>
+          </button>
+        </div>
+        <button id="copy-password">
+          <i class="fa-regular fa-copy"></i>
+          Copy Password
+        </button>
+        <div class="type-selector">
+          <div class="grid-item">
+            <input type="checkbox" name="upper-case" id="upper-case" />
+            <label for="upper-case">UpperCase</label>
+          </div>
+          <div class="grid-item">
+            <input type="checkbox" name="lower-case" id="lower-case" />
+            <label for="lower-case">LowerCase</label>
+          </div>
+          <div class="grid-item">
+            <input type="checkbox" name="number" id="number" />
+            <label for="number">Number</label>
+          </div>
+          <div class="grid-item">
+            <input type="checkbox" name="symbol" id="symbol" />
+            <label for="symbol">Symbol</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

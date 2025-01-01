@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let promise = new Promise(function (resolve, reject) {
+        let xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://restcountries.com/v3.1/name/india", true);
+        xhr.send();
+        xhr.addEventListener("load", function () {
+          if (xhr.status === 200) {
+            resolve(xhr.responseText);
+          } else {
+            reject("Something went wrong: " + xhr.statusText);
+          }
+        });
+      });
+
+      promise.then(
+        function (data) {
+          console.log(data);
+        },
+        function (err) {
+          console.log(err);
+        }
+      );
+    </script>
+  </body>
+</html>
