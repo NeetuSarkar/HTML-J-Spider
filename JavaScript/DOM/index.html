@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header">Test</h1>
+
+    <script>
+      //to update the content
+      document.getElementById("header").textContent = "This is Dom concept";
+
+      //to style the elements
+      let h1Tag = document.getElementById("header");
+      h1Tag.style.backgroundColor = "yellow";
+      h1Tag.style.padding = "10px";
+      h1Tag.style.textAlign = "center";
+    </script>
+  </body>
+</html>

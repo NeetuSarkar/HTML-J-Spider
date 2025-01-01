@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-photo">
+          <img src="images (2).jpg" alt="" />
+        </div>
+        <div class="post-like">
+          <div class="likes">
+            <button id="like-btn">
+              <i class="fa-solid fa-thumbs-up"></i>
+              Like
+            </button>
+            <p id="likes">0</p>
+          </div>
+          <div class="dislikes">
+            <button id="dislike-btn">
+              <i class="fa-solid fa-thumbs-down"></i>
+              Dislike
+            </button>
+            <p id="dislikes">0</p>
+          </div>
+        </div>
+        <div id="post-reaction">
+          <p id="total">Total Reactions: <span id="total-reactions">0</span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnClick</title>
+    <style>
+      * {
+        margin: 0;
+        text-align: center;
+      }
+      h1 {
+        background-color: yellow;
+        padding: 20px;
+      }
+      div > button {
+        padding: 5px 10px;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 id="display-text">Hello</h1>
+      <button id="msg-btn" onclick="printMgs()">Click Here</button>
+    </div>
+
+    <script>
+      let clicked = false;
+      function printMgs() {
+        if (!clicked) {
+          document.querySelector("#display-text").textContent =
+            "Button  Clicked";
+        } else {
+          document.querySelector("#display-text").textContent = "Hello";
+        }
+        clicked = !clicked;
+      }
+    </script>
+  </body>
+</html>

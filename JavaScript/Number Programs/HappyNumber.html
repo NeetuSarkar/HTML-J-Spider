@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = +prompt("enter number");
+      let sq = num;
+      if (num < 10) {
+        sq = num * num;
+      }
+      while (true) {
+        let sum = 0;
+        if (sq > 9) {
+          while (sq > 0) {
+            sum += (sq % 10) * (sq % 10);
+            sq = Math.trunc(sq / 10);
+          }
+        }
+
+        if (sq == 0) {
+          if (sum == 1) {
+            console.log("happy number");
+            break;
+          } else if (sum == 4) {
+            console.log("not happy number");
+            break;
+          } else {
+            sq = sum;
+            sum = 0;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

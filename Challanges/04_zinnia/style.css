@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #000000;
+  padding: 4px 20px;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 46px;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Navbar */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: static;
+  top: 0;
+  left: 0;
+  padding: 16px 8px;
+  margin: 0 8px;
+  background-color: #ffff;
+  box-shadow: 0 12px 23px rgba(0, 0, 0, 0.04);
+  border-radius: 0 0 10px 10px;
+  border-bottom: 1px solid transparent;
+}
+
+.nav .logo-image {
+  width: 180px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.link {
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2e3235;
+  line-height: 26px;
+  transition: all 0.4s ease-in-out;
+}
+
+.link:hover {
+  color: rgb(200, 131, 3);
+}
+
+.language-dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.language-dropdown .language-image {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+}

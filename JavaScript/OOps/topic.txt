@@ -1,0 +1,86 @@
+Prototypes
+Prototype Basics:
+
+prototype property of functions
+Internal [[Prototype]] chain
+Prototype inheritance concept
+Prototype Chain:
+
+How JavaScript looks up the prototype chain
+Accessing inherited properties and methods
+Object.create():
+
+Creating objects with specific prototypes
+Use cases for Object.create()
+__proto__ vs .prototype:
+
+Differences between __proto__ (object-level property) and .prototype (function-level property)
+Prototype Methods:
+
+Object.getPrototypeOf()
+Object.setPrototypeOf()
+Overriding Properties/Methods:
+
+Overriding inherited methods
+Shadowing properties in the prototype chain
+Object-Oriented Programming (OOPs)
+Basics of OOP:
+
+What is Object-Oriented Programming?
+Key principles: Encapsulation, Inheritance, Polymorphism, Abstraction
+Creating Objects:
+
+Object literals
+Constructor functions
+ES6 Classes
+Inheritance:
+
+Prototypal inheritance
+Using Object.create() for inheritance
+ES6 class inheritance (extends and super keywords)
+Encapsulation:
+
+Public and private properties
+Using closures for private data
+Private class fields (# syntax)
+Polymorphism:
+
+Method overriding in prototypes
+Overriding methods in ES6 classes
+Static Methods and Properties:
+
+Defining static methods in ES6 classes
+Use cases for static methods
+Getters and Setters:
+
+Using get and set keywords for computed properties
+Benefits of encapsulating logic with getters and setters
+Mixins:
+
+Combining properties and methods from multiple objects
+Use cases and implementation
+Abstract Classes and Interfaces (Workarounds in JavaScript):
+
+Simulating abstract classes using base classes
+Implementing interfaces using manual checks
+Prototype vs Class OOP:
+
+Differences and similarities
+When to use each approach
+Advanced Topics
+Object Composition:
+
+Composition over inheritance
+Delegation using Object.create()
+The this Keyword:
+
+Behavior in constructor functions, prototypes, and ES6 classes
+Arrow functions vs regular functions
+Factory Functions:
+
+Creating objects without using new
+Encapsulation using closures
+instanceof and isPrototypeOf:
+
+Checking inheritance relationships
+How they work internally
